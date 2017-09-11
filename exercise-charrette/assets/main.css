@@ -7,6 +7,7 @@
 
 body {
 	font-family: helvetica, arial, sans-serif;
+	background:black;
 }
 
 /* container */
@@ -18,94 +19,954 @@ body {
 /* items */
 
 .item {
-	height: 300px;
-	width: 300px;
-	background: blue;
+	height: 33.4vh;
+	width: 25vw;
+	background: black;
 	color: yellow;
+	text-align:center;
 
-	margin: 10px;
+	margin: 0px;
 
 	/* comment out 'float: left;' to have items stack in a single column */
 	float: left; 
 
 	/* uncomment this to get CSS transitions (conflicts with jQuery) */
-	 transition: all 500ms ease; 
+/*	 transition: all 500ms ease; */
 }
 
-/* example buttons */
+/* 1-4 */
+
+#button-1{
+	background:beige;
+	transition:0.5s ease;
+}
 
 #button-1:hover {
-	transform: rotate(90deg) scale(1.5);
-	opacity: .3;
-}
-
-#button-1:active {
 	background: pink;
-	opacity: 1;
+	transition:0.5s ease;
 }
 
-/* example buttons */
-
-#button-2::after {
-	content: 'this is added after the content inside the button';
-	color: white;
+#button-1:hover::after {
+	content:'SHY';
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 1pt;
+	transition:0.5s ease;
 }
 
-
-#button-2:hover::after {
-	content: 'this text changes on hover';
-	color: red;
-}
-
-#button-4{	
+#button-1:active{
 	background:red;
+	border-radius:100px;
+	transition:0.5s ease;
 }
 
-#button-4:hover{
-	background:grey;
+#button-1:active::after {
+	content:'REALLY SHY';
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition:0.5s ease;
 }
 
-#button-4:active{
-	background:yellow;
+
+#button-2{	
+	background:lightgreen;
+	transition:0.5s ease;
+}
+
+#button-2:active{
+	animation-name: annoying;
+	animation-duration:0.5s;
+	animation-iteration-count: infinite;
+	transition:0.5s ease;
+}
+
+@keyframes annoying {
+  0% {
+  	background:lime;
+  }
+  25%{
+  	background:black;
+  }
+  50% {
+  	background:lime;
+  }
+  75% {
+  	background:black;
+  }
+  100% {
+  	background:lime;
+  }
+}
+
+#button-2:hover{
+	background:lime;
+	transition:0.5s ease;
+}
+
+#button-2:hover::after{
+	content:'LOUD';
+	color:black;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition:0.5s ease;
+}
+
+#button-3{
+	background:orange;
+}
+
+#button-3:hover::after{
+	content:'BYE';
+	color:black;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+}
+
+.bye{
+	transform:translateX(1000px);
+	transition:ease 2s;
 }
 
 #button-5{
 	background:lavender;
-	border-radius:300px;
+	transition:0.5s ease;
 }
 
 #button-5:hover{
-	transform: translateY(-100px);
+	background:lavender;
+	transition:0.5s ease;
+}
+
+#button-5:hover::after{
+	content:'QUIET';
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition:0.5s ease;
 }
 
 #button-5:active{
-	transform: scale(0.5);
+	opacity:0;
+	transition:0.5s ease;
+}
+
+#button-4{
+	background:tan;
+	transition:0.5s ease;
+}
+
+#button-4:active{
+	border-radius:70px;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+  	animation-name: tickle;
+  	transition:0.5s ease;
+}
+
+#button-4:hover::after{
+	content:'TICKLISH';
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition:0.5s ease;
+}
+
+@keyframes tickle {
+  0% {
+  	border-radius:70px;
+  }
+  10%{
+  	border-radius:100px;
+  }
+  20% {
+  	border-radius:70px;
+  }
+  30% {
+  	border-radius:100px;
+  }
+  50% {
+  	border-radius:70px;
+  }
+  60%{
+  	border-radius:100px;
+  }
+  70%{
+  	border-radius:70px;
+  }
+  80% {
+    border-radius:100px;
+  }
+}
+
+.sun{
+	position: relative;
+	left: 35%;
+	top: 30%;
+	width:100px;
+	height:100px;
+	border-radius:100px;
+	background-color:#FFD111;
+	opacity: 0;
+}
+
+.sun1{
+	opacity: 1;
 }
 
 #button-6{
-	background:pink;
+	background:skyblue;
 }
 
-#button-6:hover{
-	border-radius:70px;
-}
-
-#button-6:active{
-	border-radius:300px;
+#button-6:hover:after{
+	content:"GOOD MORNING";
+	color:white;
+	line-height:8vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
 }
 
 #button-7{
-	background:purple;
+	background-color:brown;
+	color:black;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition: 1s ease ;
 }
 
-#button-7:hover{
-	transform:scale(2);
-	border-radius:300px;
-	mix-blend-mode: multiply;
+.replace{
+	transform:translateY(-33.3vh);
+	transition: 1s ease ;
+	opacity:0;
 }
 
-#button-7:active{
-	mix-blend-mode: color;
+#button-7:hover:after{
+	content:"DISGUISED";
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
 }
+
+#button-8{
+	background-color:navy;
 }
+
+#button-8:hover:after{
+	content:"GOOD NIGHT";
+	color:white;
+	line-height:8vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+}
+
+.moon{
+	position: relative;
+	width: 100px;
+  	height: 100px;
+  	border-radius: 50%;
+  	box-shadow: 25px 25px 0 0 #FFFF99;
+	left: 25%;
+	top: 20%;
+	opacity: 0;
+}
+
+.moon1{
+	opacity: 1;
+}
+
+#button-9{
+	background-color:pink;
+	transition: 2s ease;
+}
+
+#button-9:hover:after{
+	content:"NOM NOM NOM";
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition: 2s ease;
+}
+
+.eat{
+	width:100vw;	
+	transition: 2s ease;
+}
+
+#button-10{
+	background-color:green;
+}
+
+.bread{
+	background-color:tan;
+	height:5.7vh;
+	position:relative;
+}
+
+.burger{
+	opacity:0;
+	transition: 0.1s ease;
+}
+
+.burger1{
+	opacity:1;
+	transition: 0.1s ease;
+}
+
+.lettuce{
+	background-color:green;
+	height:5.5vh;
+	position:relative;
+}
+
+.tomato{
+	background-color:tomato;
+	height:5.5vh;
+	position:relative;
+}
+
+.cheese{
+	background-color:yellow;
+	height:5.5vh;
+	position:relative;
+}
+
+.meat{
+	background-color:#4B280F;
+	height:5.5vh;
+	position:relative;
+}
+
+#button-11{
+	background-color:#F4D53B;
+}
+
+.sushi{
+	opacity:0;
+	transition: 0.1s ease;
+}
+
+.sushi1{
+	opacity:1;
+	transition: 0.1s ease;
+}
+
+.nori{
+	background-color:black;
+	height:33.4vh;
+	width:5vw;
+	left:60vw;
+	position:absolute;
+}
+
+.rice1{
+	background-color:#fffff1;
+	height:22.4vh;
+	width:10vw;
+	position:absolute;
+	top:77.8vh;
+}
+
+.rice2{
+	background-color:#fffff1;
+	height:22.4vh;
+	left:65vw;
+	width:10vw;
+	position:absolute;
+	top:77.8vh;
+}
+
+#button-12{
+	background-color:tomato;
+}
+
+.fries{
+	opacity:0;
+	transition: 0.1s ease;
+}
+
+.fries1{
+	opacity:1;
+	transition: 0.1s ease;
+}
+
+.fry1{
+	background-color:yellow;
+	height:20vh;
+	width:2.5vw;
+	left:77.5vw;
+	position:absolute;
+}
+
+.fry2{
+	background-color:yellow;
+	height:20vh;
+	width:2.5vw;
+	left:82.5vw;
+	position:absolute;
+}
+
+.fry3{
+	background-color:yellow;
+	height:20vh;
+	width:2.5vw;
+	left:87.5vw;
+	position:absolute;
+}
+
+.fry4{
+	background-color:yellow;
+	height:20vh;
+	width:2.5vw;
+	left:92.5vw;
+	position:absolute;
+}
+
+.fry5{
+	background-color:yellow;
+	height:20vh;
+	width:2.5vw;
+	left:97.5vw;
+	position:absolute;
+}
+
+.fry6{
+	background-color:#F4D53B;
+	height:20vh;
+	width:2.5vw;
+	left:75vw;
+	position:absolute;
+}
+
+.fry7{
+	background-color:#F4D53B;
+	height:20vh;
+	width:2.5vw;
+	left:80vw;
+	position:absolute;
+}
+
+.fry8{
+	background-color:#F4D53B;
+	height:20vh;
+	width:2.5vw;
+	left:85vw;
+	position:absolute;
+}
+
+.fry9{
+	background-color:#F4D53B;
+	height:20vh;
+	width:2.5vw;
+	left:90vw;
+	position:absolute;
+}
+
+.fry10{
+	background-color:#F4D53B;
+	height:20vh;
+	width:2.5vw;
+	left:95vw;
+	position:absolute;
+}
+
+#button-13{
+	background-color:#82DBDD;
+}
+
+#button-13:hover{
+	width: 25vw;
+	height: 33.4vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #82DBDD, #21A4CB, #05569E ,#001B4B);
+	background-size: 400% 400%;
+	animation: ocean 5s ease infinite;
+}
+
+#button-13:hover:after{
+	content:"FISHY";
+	color:white;
+	line-height:0vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition: 2s ease;
+}
+
+.fishbody{
+	position: relative;
+  	margin-top: 12vh;
+  	margin-left: 7.5vw;
+  	background-color: orange;
+  	border-radius: 50%;
+  	width: 8vw; 
+  	height: 10vh;
+}
+
+.fishtail{
+	width: 0;
+	height: 0;
+	border-top: 4vh solid transparent;
+	border-right: 8vh solid orange;
+	border-bottom: 4vh solid transparent;
+	margin-top:-9vh;
+  	margin-left: 12.5vw;
+}
+
+.fisheye{
+	position: relative;
+  	margin-top: -5vh;
+  	margin-left: 8vw;
+	width:1vh;
+	height:1vh;
+	border-radius:1vh;
+	background-color:black;
+}
+
+.fish{
+  opacity:0;
+  transition: 0.5s ease;
+}
+
+.fish1{
+	opacity:1;
+	transition: 0.5s ease;
+}
+
+
+@keyframes ocean {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+#button-14{
+	background-color:lightgrey;
+}
+
+@keyframes look{
+	0%{
+		transform:translateX(-40px);
+	}
+	25%{
+		transform:translateY(20px);
+	}
+	50%{
+		transform:translateX(-50px);
+	}
+	75%{
+		transform:translateY(-25px);
+	}
+	100%{
+		transform:translateX(-40px);
+	}
+}
+
+#button-14:hover:after{
+	content:'CREEPY';
+	color:black;
+	top:-10vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition: 2s ease;
+	position:relative;
+}
+
+.whole{
+	opacity:0;
+	transition:0.5s ease;
+}
+
+.whole1{
+	opacity:1;
+	transition:0.5s ease;
+}
+
+.eye {
+  	width: 10vw;
+  	height: 10vw;
+	background-color:white;
+  	border-radius:  75% 1%;
+  	position: relative;
+  	transform: rotate(45deg);
+  	left:7vw;
+  	top:8vh;
+}
+
+.eyeball {
+  	position: relative;
+  	width: 8vh;
+  	height: 8vh;
+  	background-color:black;
+  	border-radius: 50%;
+  	left: 10vw;
+  	top: -5vh;
+  	animation: look 5s ease infinite;
+}
+
+
+#button-15{
+	background-color:indigo;
+}
+
+#button-15:hover:after{
+	content:"DIETING";
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+}
+
+#button-16{
+	background-color:#D50077;
+	transition:3s ease;
+}
+
+#button-16:hover:after{
+	content:"ON WEDNESDAYS";
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+}
+
+#button-16:active{
+	border-radius:100vh;
+	transform:scale(10);
+	transition:3s ease;
+}
+
+#button-16:active:after{
+	color:#D50077
+}
+
+#button-17{
+	background-color:#FFA378;
+	transition:1s ease;
+}
+
+#button-17:hover:after{
+	content:"INSIDE OUT";
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition:1s ease;
+}
+
+.invert{
+	filter:invert(100);
+	transition:1s ease;
+}
+
+#button-18{
+	background-color:grey;
+	transition:1s ease;
+}
+
+#button-18:hover:after{
+	content:"OLD TV";
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition:1s ease;
+}
+
+.grayscale{
+	filter:grayscale(100);
+	transition:1s ease;
+}
+
+#button-19{
+	background-color:blue;
+	transition:1s ease;
+}
+
+#button-19:hover:after{
+	content:"LOST MY GLASSES";
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition:1s ease;
+}
+
+.blur{
+	filter:blur(20px);
+	transition:1s ease;
+}
+
+#button-20{
+	background-color:#E8D28D;
+	transition: 5s ease;
+}
+
+.flood{
+	transform:scale(10);
+	background: linear-gradient(-90deg, #82DBDD, #21A4CB, #05569E ,#001B4B);
+	background-size: 400% 400%;
+	animation: ocean 5s ease infinite;
+}
+
+#button-21{
+	background-color:teal;
+}
+
+#button-21:hover:after{
+	content:"CLONE";
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+}
+
+#button-22{
+	background-color:#CBB6FE;
+}
+
+#button-22:hover:after{
+	content:"HEARTBEAT";
+	color:white;
+	font-size:18pt;
+	letter-spacing: 2pt;
+}
+
+.pulse{
+	width:15vh;
+	height:15vh;
+	left:8.5vw;
+	top:9.5vh;
+	position:relative;
+	background-color:#F03D63;
+	animation: pulse 1s ease infinite;
+	opacity:0;
+}
+
+.pulse1{
+	opacity:1;
+}
+
+@keyframes pulse {
+	0% {
+		border-radius:100vh;		
+	}
+	50% {
+		border-radius:5vh;
+	}
+	100% {
+		border-radius:100vh;
+	}
+} 
+
+#button-23{
+	background-color:#FAFA8B;
+}
+
+#button-23:hover:after{
+	content:"HAPPY";
+	color:black;
+	font-size:18pt;
+	letter-spacing: 2pt;
+}
+
+.happy{
+	width:15vh;
+	height:15vh;
+	left:8.5vw;
+	top:9.5vh;
+	position:relative;
+	background-color:#73C6B6;
+	animation: happy 3s ease infinite;
+	opacity:0;
+}
+
+.happy1{
+	opacity:1;
+}
+
+@keyframes happy {
+	0% {
+		transform: rotate(-30deg);
+		background-color:#73C6B6;		
+	}
+	25% {
+		transform: rotate(15deg);
+		background-color:#8BFAE7;
+		border-radius:5vh;
+	}
+	50% {
+		transform: rotate(-30deg);
+		background-color:#73C6B6;	
+		border-radius:5vh;
+	}
+	75% {
+		transform: rotate(15deg);
+		background-color:#8BFAE7;
+		border-radius:5vh;
+	}
+	100% {
+		transform: rotate(-30deg);
+		background-color:#73C6B6;	
+
+	}
+}
+
+#button-24{
+	background-color:#974F66;
+}
+
+#button-24:hover:after{
+	content:"LOADING";
+	margin-top:-15vh;
+	line-height:0vh;
+	color:white;
+	font-size:18pt;
+	letter-spacing: 2pt;
+}
+
+.spin{
+	width:15vh;
+	height:15vh;
+	left:8vw;
+	top:9vh;
+	border-radius:15vh;
+	border: white inset 10px;
+	position:relative;
+	background-color:#974F66;
+	animation: spin 2s ease infinite;
+	opacity:0;
+}
+
+.spin1{
+	opacity:1;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);		
+	}
+	100% {
+		transform: rotate(360deg);	
+	}
+}
+
+#button-25{
+	background-color:#C8FF37;
+}
+
+#button-25:hover:after{
+	content:"PLANT CELL";
+	line-height:33vh;
+	color:black;
+	font-size:18pt;
+	letter-spacing: 2pt;
+}
+
+#button-25:active{
+	background-color:green;
+	transition: 1s ease;
+	border-radius:100vh;
+}
+
+#button-25:active:after{
+	content:"PLANT CELL";
+	line-height:33vh;
+	color:white;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition: 1s ease;
+}
+
+
+#button-26{
+	background-color:#D86666;
+	transition: 2s ease;
+}
+
+#button-26:hover:after{
+	content:"SQUISH";
+	color:white;
+	line-height:33vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+	transition: 2s ease;
+}
+
+#button-26:active{
+	background-color:#D86666;
+	animation: slide 2s ease infinite;
+}
+
+@keyframes slide {
+	0%{
+		transform:scaleY(1);
+		background-color:#D86666;
+	}
+	50%{
+		transform:scaleY(0);
+		background-color:pink;
+	}
+	100%{
+		transform:scaleY(1);
+		background-color:#D86666;
+	}
+}
+
+#button-27{
+	background-color:lavender;
+}
+
+#button-27:hover:after{
+	content:"TAKEOVER";
+	color:black;
+	line-height:8vh;
+	font-size:18pt;
+	letter-spacing: 2pt;
+}
+
+.panel{
+	width:25vw;
+	height:0.1vh;
+	background-color:black;
+}
+
+#button-28{
+	background-color:white;
+	transition: 1s ease;
+}
+
+#button-28:hover{
+	border-radius:100vh;
+	transition: 1s ease;
+}
+
+.yolk{
+	background-color:orange;
+	width:12vh;
+	height:12vh;
+	border-radius:12vh;
+	margin-top:10vh;
+	margin-left:10vw;
+	opacity:0;
+}
+
+.yolk1{
+	opacity:1;
+}
+
+
 
