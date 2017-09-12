@@ -953,7 +953,7 @@ body {
 	transition: 1s ease;
 }
 
-{
+#button-28:hover{
 	border-radius:100vh;
 	transition: 1s ease;
 }
