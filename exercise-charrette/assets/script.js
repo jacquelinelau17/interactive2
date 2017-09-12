@@ -69,7 +69,7 @@ $(document).ready(function(){
 	});
 
 	$('#button-22').click(function() {			
-		$(".pulse").toggleClass("pulse1");
+		$(".heartbeat").toggleClass("heartbeat1");
 	});
 
 	$('#button-23').click(function() {			
@@ -87,6 +87,44 @@ $(document).ready(function(){
 	$('#button-28').click(function() {			
 		$(".yolk").toggleClass("yolk1");
 	});
+
+	$("#button-29").click(function(){
+        $(".cover2").show();
+        $(".cover1").hide();
+    }); 
+
+	$("#button-32").click(function(){
+        $(".cover2").hide();
+        $(".cover1").show();
+    });
+
+	$("#button-33").click(function(){
+        $(".item").animate( {"width": "+=80vw"},1000);
+    });
+
+	$("#button-34").click(function(){
+        $(".screen").animate({"width":'toggle'},800);
+    });
+
+	$('#button-35').click(function() {			
+		$(".grow").animate({"height":'toggle'},800);
+	});
+
+	$(function() {
+  		var count = 0, countRate = 0, output = $('.output');
+  		setInterval(function(){output.html(count)}, 1);	
+  		$('#button-37').click(function() { count += 1 });
+	});
+    
+	$("#button-37").hover(function(){
+        $(".output").css("opacity", "1");
+        }, function(){
+        $(".output").css("opacity", "0");
+    });
+
+    // $("#button-40").click(function(){
+    //     $(".switch1").animate({"height":'toggle'},800);
+    // }); 
 
 });
 
