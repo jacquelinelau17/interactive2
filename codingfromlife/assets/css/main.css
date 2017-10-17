@@ -1,0 +1,393 @@
+body {
+	background: #cccccc;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: #B8B0A4;
+	position: relative;
+}
+
+#table{
+	width: 900px;
+	height: 95px;
+    top: 461px;
+	background:tan;
+	position: absolute;
+	z-index:0;
+}
+
+#table-edge{
+	width: 900px;
+	height: 21px;
+    top: 536px;
+	background:#927346 ;
+	position: absolute;
+	z-index:1;
+}
+
+#sheet {
+	clip-path: polygon(15% 50%, 93% 50%, 100% 100%, 0% 100%);
+	width:700px;
+	height:130px;
+	top:395px;
+	left:100px;
+	background-color:#FFF947;
+	position: absolute;
+	z-index:2;
+}
+
+#pom {
+	clip-path: ellipse(50% 45% at 50% 50%);
+	transform:rotate(-10deg);
+	width: 100px;
+	height: 100px;
+	background: tomato;
+	top: 390px;
+	left: 290px;
+	position: absolute;
+	z-index:9;
+}
+
+#pom-top{
+	width:17px;
+	height:15px;
+	background:brown;
+	transform:rotate(-15deg);
+	top: 385px;
+	left: 315px;
+	position: absolute;
+	z-index:10;
+}
+
+#banana{
+	width:180px;
+	height: 180px;
+	background:#FEE01F;
+	top: 340px;
+	left: 350px;
+	position: absolute;
+	z-index:9;
+	clip-path: polygon(21% 43%, 14% 33%, 19% 31%, 25% 40%, 33% 41%, 39% 49%, 48% 55%, 57% 58%, 70% 61%, 84% 63%, 94% 62%, 95% 69%, 78% 79%, 65% 80%, 50% 78%, 37% 74%, 28% 63%, 21% 53%);
+}
+
+#vase{
+	width:100px;
+	height: 150px;
+	background:orange;
+	top: 325px;
+	left: 470px;
+	position: absolute;
+	z-index:8;
+	clip-path: polygon(56% 0, 80% 0%, 90% 100%, 20% 100%);
+}
+
+#stem{
+	width:70px;
+	height: 150px;
+	background:lightgreen;
+	transform: rotate(10deg);
+	top: 240px;
+	left: 510px;
+	position: absolute;
+	z-index:7;
+	clip-path: polygon(23% 100%, 43% 39%, 83% 0, 98% 0, 53% 43%, 34% 100%);
+}
+
+#leaf1{
+	width:40px;
+	height: 40px;
+	background:green;
+	transform: rotate(20deg);
+	top: 220px;
+	left: 575px;
+	position: absolute;
+	z-index:7;
+	clip-path: ellipse(29% 40% at 50% 50%);
+}
+
+#leaf2{
+	width:35px;
+	height: 40px;
+	background:green;
+	transform: rotate(20deg);
+	top: 210px;
+	left: 590px;
+	position: absolute;
+	z-index:7;
+	clip-path: ellipse(29% 40% at 50% 50%);
+}
+
+#leaf3{
+	width:35px;
+	height: 40px;
+	background:green;
+	transform: rotate(20deg);
+	top: 235px;
+	left: 580px;
+	position: absolute;
+	z-index:7;
+	clip-path: ellipse(29% 40% at 50% 50%);
+}
+
+.cont1{
+	width:35px;
+	height: 40px;
+	background:green;
+	transform: rotate(20deg);
+	top: 180px;
+	left: 580px;
+	position: absolute;
+	z-index:7;
+}
+
+.flower_head{
+	z-index: 2;
+	position: relative;
+	top: 20%;
+	left:43%; 
+	width: 60px;
+	height: 60px;
+	background-color:#412B00;
+	border-radius: 50%;
+
+}
+
+.flower_head > span{
+	position: absolute;
+    padding: 25px 5px;
+    border-radius: 64%;
+    background: linear-gradient(orange, #FFD734);
+    transition:all 2s ease-in-out ;
+}
+._1{
+    transform: translate(-28px, -11px) rotate(109deg);
+    
+}
+._2{
+    transform: translate(-22px, -20px) rotate(118deg);
+    
+}
+._3{
+	transform: translate(-17px, -30px) rotate(128deg);
+	
+}
+._4{
+	transform: translate(-7px, -36px) rotate(137deg);
+	
+}
+._5{
+	transform: translate(3px, -42px) rotate(150deg);
+	
+}
+._6{
+	transform: translate(15px, -46px) rotate(165deg);
+	
+}
+._7{
+	transform: translate(27px, -47px) rotate(179deg);
+	
+}
+._8{
+	transform: translate(38px, -46px) rotate(186deg);
+	
+}
+._9{
+	transform: translate(49px, -42px) rotate(197deg);
+	
+}
+._10{
+	transform: translate(60px, -35px) rotate(213deg);
+	
+}
+._11{
+	transform: translate(68px, -26px) rotate(226deg);
+	
+}
+._12{
+	transform: translate(74px, -15px) rotate(241deg);
+	
+}
+._13{
+	transform: translate(78px, -2px) rotate(256deg);
+	
+}
+._14{
+	transform: translate(79px, 11px) rotate(272deg);
+	
+}
+._15{
+	transform: translate(76px, 23px) rotate(286deg);
+	
+}
+._16{
+	transform: translate(71px, 33px) rotate(294deg);
+	
+}
+._17{
+	transform: translate(64px, 42px) rotate(305deg);
+	
+}
+._18{
+	transform: translate(54px, 50px) rotate(322deg);
+	
+}
+._19{
+	transform: translate(43px, 56px) rotate(338deg);
+	
+}
+._20{
+	transform: translate(31px, 60px) rotate(354deg);
+	
+}
+._21{
+	transform: translate(20px, 59px) rotate(363deg);
+	
+}
+._22{
+	transform: translate(9px, 56px) rotate(372deg);
+	
+}
+._23{
+	transform: translate(-2px, 52px) rotate(382deg);
+	
+}
+._24{
+	transform: translate(-13px, 45px) rotate(398deg);
+	
+}
+._25{
+	transform: translate(-20px, 35px) rotate(412deg);
+	
+}
+._26{
+	transform: translate(-25px, 25px) rotate(422deg);
+	
+}
+._27{
+	transform: translate(-29px, 13px) rotate(438deg);
+	
+}
+._28{
+	transform: translate(-30px, 2px) rotate(450deg);
+	
+}
+
+.flower_head:hover span:first-of-type{
+	transform: translate(-2px, 280px) rotate(70deg);
+    transition-delay: .1s;
+    z-index: 4;
+}
+.flower_head:hover span:nth-of-type(12){
+	z-index: 4;
+	transform: translate(30px, 280px) rotate(70deg);
+    transition-delay: .3s;
+ 
+}
+.flower_head:hover span:nth-of-type(19){
+	z-index: 4;
+	transform: translate(60px, 280px) rotate(70deg);
+	transition-delay: .7s;
+}
+.flower_head:hover span:nth-of-type(24){
+	z-index: 4;
+	transform: translate(90px, 280px) rotate(70deg);
+	transition-delay: .9s;
+}
+.flower_head:hover span:nth-of-type(6){
+	z-index: 4;
+	transform: translate(120px, 280px) rotate(70deg);
+	transition-delay: .11s;
+}
+
+#donut{
+	width:30px;
+	height:17px;
+	border-radius:7px;
+	top: 480px;
+	left: 385px;
+	position: absolute;
+	z-index:9;
+	background:#DEA046;
+}
+
+#donut-top{
+	width:30px;
+	height:30px;
+	clip-path: ellipse(50% 13% at 50% 50%);
+	top: 467px;
+	left: 385px;
+	position: absolute;
+	z-index:10;
+	background:pink;
+
+}
+
+
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 150px solid yellow;
+	position: absolute;
+	top: 203px;
+	left: 60px;
+}
+
+#square {
+	width: 150px;
+	height: 150px;
+	background: red;
+	top: 203px;
+	left: 270px;
+	position: absolute;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#clip {
+	width: 150px;
+	height: 150px;
+	background: green;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	top: 203px;
+	left: 690px;
+	position: absolute;
+
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+}
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
