@@ -29,6 +29,7 @@ body {
 }
 
 #sheet {
+	-webkit-clip-path: polygon(15% 50%, 93% 50%, 100% 100%, 0% 100%);
 	clip-path: polygon(15% 50%, 93% 50%, 100% 100%, 0% 100%);
 	width:700px;
 	height:130px;
@@ -40,6 +41,7 @@ body {
 }
 
 #pom {
+	-webkit-clip-path: ellipse(50% 45% at 50% 50%);
 	clip-path: ellipse(50% 45% at 50% 50%);
 	transform:rotate(-10deg);
 	width: 100px;
@@ -71,6 +73,7 @@ body {
 	position: absolute;
 	z-index:9;
 	clip-path: polygon(21% 43%, 14% 33%, 19% 31%, 25% 40%, 33% 41%, 39% 49%, 48% 55%, 57% 58%, 70% 61%, 84% 63%, 94% 62%, 95% 69%, 78% 79%, 65% 80%, 50% 78%, 37% 74%, 28% 63%, 21% 53%);
+	-webkit-clip-path:polygon(21% 43%, 14% 33%, 19% 31%, 25% 40%, 33% 41%, 39% 49%, 48% 55%, 57% 58%, 70% 61%, 84% 63%, 94% 62%, 95% 69%, 78% 79%, 65% 80%, 50% 78%, 37% 74%, 28% 63%, 21% 53%);
 }
 
 #vase{
@@ -82,6 +85,7 @@ body {
 	position: absolute;
 	z-index:8;
 	clip-path: polygon(56% 0, 80% 0%, 90% 100%, 20% 100%);
+	-webkit-clip-path: polygon(56% 0, 80% 0%, 90% 100%, 20% 100%);
 }
 
 #stem{
@@ -94,6 +98,7 @@ body {
 	position: absolute;
 	z-index:7;
 	clip-path: polygon(23% 100%, 43% 39%, 83% 0, 98% 0, 53% 43%, 34% 100%);
+	-webkit-clip-path: polygon(23% 100%, 43% 39%, 83% 0, 98% 0, 53% 43%, 34% 100%);
 }
 
 #leaf1{
@@ -105,6 +110,7 @@ body {
 	left: 575px;
 	position: absolute;
 	z-index:7;
+	-webkit-clip-path: ellipse(29% 40% at 50% 50%);
 	clip-path: ellipse(29% 40% at 50% 50%);
 }
 
@@ -118,6 +124,7 @@ body {
 	position: absolute;
 	z-index:7;
 	clip-path: ellipse(29% 40% at 50% 50%);
+	-webkit-clip-path: ellipse(29% 40% at 50% 50%);
 }
 
 #leaf3{
@@ -130,6 +137,7 @@ body {
 	position: absolute;
 	z-index:7;
 	clip-path: ellipse(29% 40% at 50% 50%);
+	-webkit-clip-path: ellipse(29% 40% at 50% 50%);
 }
 
 .cont1{
@@ -317,6 +325,7 @@ body {
 	width:30px;
 	height:30px;
 	clip-path: ellipse(50% 13% at 50% 50%);
+	-webkit-clip-path: ellipse(50% 13% at 50% 50%);
 	top: 467px;
 	left: 385px;
 	position: absolute;
@@ -355,6 +364,7 @@ body {
 	width: 150px;
 	height: 150px;
 	background: green;
+	-webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 	top: 203px;
 	left: 690px;
