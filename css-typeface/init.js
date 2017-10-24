@@ -86,12 +86,12 @@ Graphic.prototype.accelHandler = function(accel){
  var z = accel.accelerationIncludingGravity.z;
  var h = x/60.0;
  var c  = HSVtoRGB(h,1,1);
- this.background_color = "rgb("+c.r+","+c.g+","+c.b+")" ;
+ // this.background_color = "rgb("+c.r+","+c.g+","+c.b+")" ;
  if(this.activated){
     $("#orientation").html("<br />x: "+x+"<br />y: "+y+"<br />z: "+z);
     $("#fun .item div").css("border-radius", Math.abs(x)*2+"vh");
     $("#fun .item div").css("width", Math.abs(y)*10+"px");
-    $fun.css("background-color", this.background_color);
+    // $fun.css("background-color", this.background_color);
  }
 }
 
@@ -103,28 +103,28 @@ Graphic.prototype.orientHandler = function(orient){
  * OR
  * h, s, v
 */
-function HSVtoRGB(h, s, v) {
-    var r, g, b, i, f, p, q, t;
-    if (h && s === undefined && v === undefined) {
-        s = h.s, v = h.v, h = h.h;
-    }
-    i = Math.floor(h * 6);
-    f = h * 6 - i;
-    p = v * (1 - s);
-    q = v * (1 - f * s);
-    t = v * (1 - (1 - f) * s);
-    switch (i % 6) {
-        case 0: r = v, g = t, b = p; break;
-        case 1: r = q, g = v, b = p; break;
-        case 2: r = p, g = v, b = t; break;
-        case 3: r = p, g = q, b = v; break;
-        case 4: r = t, g = p, b = v; break;
-        case 5: r = v, g = p, b = q; break;
-    }
-    return {
-        r: Math.floor(r * 255),
-        g: Math.floor(g * 255),
-        b: Math.floor(b * 255)
-    };
-}
+// function HSVtoRGB(h, s, v) {
+//     var r, g, b, i, f, p, q, t;
+//     if (h && s === undefined && v === undefined) {
+//         s = h.s, v = h.v, h = h.h;
+//     }
+//     i = Math.floor(h * 6);
+//     f = h * 6 - i;
+//     p = v * (1 - s);
+//     q = v * (1 - f * s);
+//     t = v * (1 - (1 - f) * s);
+//     switch (i % 6) {
+//         case 0: r = v, g = t, b = p; break;
+//         case 1: r = q, g = v, b = p; break;
+//         case 2: r = p, g = v, b = t; break;
+//         case 3: r = p, g = q, b = v; break;
+//         case 4: r = t, g = p, b = v; break;
+//         case 5: r = v, g = p, b = q; break;
+//     }
+//     return {
+//         r: Math.floor(r * 255),
+//         g: Math.floor(g * 255),
+//         b: Math.floor(b * 255)
+//     };
+// }
 
