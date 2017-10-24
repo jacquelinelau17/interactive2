@@ -90,7 +90,7 @@ Graphic.prototype.accelHandler = function(accel){
  if(this.activated){
     $("#orientation").html("<br />x: "+x+"<br />y: "+y+"<br />z: "+z);
     $(".item div").css("border-radius", Math.abs(x)*2+"vh");
-    $(".item div").css("border-width", Math.abs(y)*2+"px");
+    $(".item div").css("border-width", Math.abs(y)*10+"px");
     $fun.css("background-color", this.background_color);
  }
 }
