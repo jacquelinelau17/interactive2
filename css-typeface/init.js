@@ -89,8 +89,8 @@ Graphic.prototype.accelHandler = function(accel){
  this.background_color = "rgb("+c.r+","+c.g+","+c.b+")" ;
  if(this.activated){
     $("#orientation").html("<br />x: "+x+"<br />y: "+y+"<br />z: "+z);
-    $(".item div").css("border-radius", Math.abs(x)*2+"vh");
-    $(".item div").css("width", Math.abs(y)*10+"px");
+    $("#fun .item div").css("border-radius", Math.abs(x)*2+"vh");
+    $("#fun .item div").css("width", Math.abs(y)*10+"px");
     $fun.css("background-color", this.background_color);
  }
 }
