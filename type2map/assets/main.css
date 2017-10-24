@@ -1,0 +1,30 @@
+body{
+	overflow:hidden;
+}
+
+.map{
+	height:80vh;
+	width:80vw;
+	margin-left:12vw;
+	margin-top:7vh;
+}
+
+.church{
+	background-image:"url(assets/missiondolores.png)";
+}
+
+.cls-1{fill:#bfbfbf;}.cls-2{fill:#bed5a4;}
+.cls-3{fill:#a0c655;}.cls-4{fill:#3a6029;}
+.cls-5{fill:#1e492b;}.cls-6{fill:#738e62;}
+.cls-7{fill:#6c9275;}.cls-8{fill:#438966;}
+.cls-9{fill:#d4742e;}.cls-10{fill:#e9de38;}
+.cls-11{fill:#e6c07b;}.cls-12{fill:#dfa232;}
+.cls-13{fill:#9662a4;}.cls-14{fill:#5e267c;}
+.cls-15{fill:#2c0d56;}.cls-16{fill:#d05345;}
+.cls-17{fill:#56131f;}.cls-18{fill:#9e434d;}
+.cls-19{fill:#cb5971;}.cls-20{fill:#d6789f;}
+.cls-21{fill:#cb2e41;}.cls-22{fill:#881433;}
+.cls-23{fill:#7bc4ea;}.cls-24{fill:#9aaed4;}
+.cls-25{fill:#6d8abc;}.cls-26{fill:#b5d8e2;}
+.cls-27{fill:#3da7dc;}.cls-28{fill:#002e4e;}
+.cls-29{fill:#2a5a7a;}
