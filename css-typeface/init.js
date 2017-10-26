@@ -19,7 +19,7 @@ $(document).ready(function(){
 var checkFeatureSupport = function(){
 
   if (!window.DeviceMotionEvent) {
-    alert("DeviveMotionEvent not supported");
+    alert("DeviceMotionEvent not supported");
   }
 }
 
