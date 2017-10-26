@@ -101,9 +101,12 @@ Graphic.prototype.accelHandler = function(accel){
  var h = x/60.0;
  var c  = HSVtoRGB(h,1,1);
  this.background_color = "rgb("+c.r+","+c.g+","+c.b+")" ;
+
  if(this.activated){
-    var nchild = randomNum(1, 2);
+
+    var nchild = randomNum(1, 5);
     console.log(nchild);
+
     $("#fun .item").removeClass('show');
     $("#fun .item:nth-child("+nchild+")").addClass('show');
     $("#orientation").html("<br />x: "+x+"<br />y: "+y+"<br />z: "+z);
