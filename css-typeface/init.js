@@ -1,5 +1,6 @@
 var context;
 var $fun;
+var $funDiv;
 var graphic;
 
 
@@ -28,7 +29,7 @@ var setup = function(){
   checkFeatureSupport();
   graphic = new Graphic();
   $fun = $("#fun");
-
+  $funDiv = $("#fun .item div");
   //add events
   $fun.bind("mousedown", touchActivate);
   $fun.bind("mouseup", touchDeactivate);
@@ -73,11 +74,13 @@ Graphic.prototype.touchActivate = function(e){
   this.activated = true;
   $fun.css("background-color", "lime");
   $fun.css("background-color", this.background_color);
+  $funDiv.css("background-color", this.background_color);
 }
 
 Graphic.prototype.touchDeactivate = function(e){
   this.activated = false;
   $fun.css("background-color","white");
+  $funDiv.css("background-color","white");
 }
 
 Graphic.prototype.accelHandler = function(accel){
