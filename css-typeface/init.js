@@ -86,7 +86,7 @@ Graphic.prototype.accelHandler = function(accel){
  var z = accel.accelerationIncludingGravity.z;
  var h = x/60.0;
  var c  = HSVtoRGB(h,1,1);
- // this.background_color = "rgb("+c.r+","+c.g+","+c.b+")" ;
+ this.background_color = "rgb("+c.r+","+c.g+","+c.b+")" ;
  if(this.activated){
     $("#orientation").html("<br />x: "+x+"<br />y: "+y+"<br />z: "+z);
     $("#fun .item div").css("border-radius", Math.abs(x)*2+"vh");
