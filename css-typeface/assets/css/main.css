@@ -970,12 +970,13 @@
 }
 
 
+
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
   .container{
   	display: none;
   }
-  .fun{
+  #fun{
   	display: block;
   	height: 100vh;
   }
