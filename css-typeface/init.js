@@ -98,10 +98,10 @@ Graphic.prototype.accelHandler = function(accel){
 Graphic.prototype.orientHandler = function(orient){
 }
 
- accepts parameters
- * h  Object = {h:x, s:y, v:z}
- * OR
- * h, s, v
+ //accepts parameters
+ //* h  Object = {h:x, s:y, v:z}
+ //* OR
+ //* h, s, v
 
 function HSVtoRGB(h, s, v) {
     var r, g, b, i, f, p, q, t;
