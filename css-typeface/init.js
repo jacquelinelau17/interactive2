@@ -70,19 +70,6 @@ function Graphic(){
   this.background_color="purple";
 }
 
-Graphic.prototype.touchActivate = function(e){
-  this.activated = true;
-  $fun.css("background-color", "lime");
-  $fun.css("background-color", this.background_color);
-  $funDiv.css("background-color", this.background_color);
-}
-
-Graphic.prototype.touchDeactivate = function(e){
-  this.activated = false;
-  $fun.css("background-color","white");
-  $funDiv.css("background-color","white");
-}
-
 function randomNum(m,n) {
     
     //minumum number
@@ -94,6 +81,29 @@ function randomNum(m,n) {
     return Math.floor(Math.random() * (n - m + 1) ) + m;
 }
 
+
+Graphic.prototype.touchActivate = function(e){
+  this.activated = true;
+  $fun.css("background-color", "lime");
+  $fun.css("background-color", this.background_color);
+  $funDiv.css("background-color", this.background_color);
+
+  var nchild = randomNum(1, 5);
+  console.log(nchild);
+
+  $("#fun .item").removeClass('show');
+  $("#fun .item:nth-child("+nchild+")").addClass('show');
+
+
+}
+
+Graphic.prototype.touchDeactivate = function(e){
+  this.activated = false;
+  $fun.css("background-color","white");
+  $funDiv.css("background-color","white");
+}
+
+
 Graphic.prototype.accelHandler = function(accel){
  var x = accel.accelerationIncludingGravity.x;
  var y = accel.accelerationIncludingGravity.y;
@@ -103,12 +113,6 @@ Graphic.prototype.accelHandler = function(accel){
  this.background_color = "rgb("+c.r+","+c.g+","+c.b+")" ;
 
  if(this.activated){
-
-    var nchild = randomNum(1, 5);
-    console.log(nchild);
-
-    $("#fun .item").removeClass('show');
-    $("#fun .item:nth-child("+nchild+")").addClass('show');
     $("#orientation").html("<br />x: "+x+"<br />y: "+y+"<br />z: "+z);
     $("#fun .item div").css("border-radius", Math.abs(x)*2+"vh");
     $("#fun .item div").css("width", Math.abs(y)*10+"px");
