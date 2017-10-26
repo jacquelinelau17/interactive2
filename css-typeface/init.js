@@ -64,21 +64,21 @@ function devOrientHandler(eventData) {
   graphic.orientHandler(eventData);
 }
 
-function Graphic(){
-  this.activated = false;;
-  this.background_color="purple";
-}
+// function Graphic(){
+//   this.activated = false;;
+//   this.background_color="purple";
+// }
 
-Graphic.prototype.touchActivate = function(e){
-  this.activated = true;
-  $fun.css("background-color", "lime");
-  $fun.css("background-color", this.background_color);
-}
+// Graphic.prototype.touchActivate = function(e){
+//   this.activated = true;
+//   $fun.css("background-color", "lime");
+//   $fun.css("background-color", this.background_color);
+// }
 
-Graphic.prototype.touchDeactivate = function(e){
-  this.activated = false;
-  $fun.css("background-color","white");
-}
+// Graphic.prototype.touchDeactivate = function(e){
+//   this.activated = false;
+//   $fun.css("background-color","white");
+// }
 
 Graphic.prototype.accelHandler = function(accel){
  var x = accel.accelerationIncludingGravity.x;
