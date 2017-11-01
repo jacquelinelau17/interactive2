@@ -88,7 +88,7 @@ Graphic.prototype.touchActivate = function(e){
   // $fun.css("background-color", this.background_color);
   // $funDiv.css("background-color", this.background_color);
 
-  var nchild = randomNum(1, 12);
+  var nchild = randomNum(1, 11);
   console.log(nchild);
 
   $("#fun .newitem").removeClass('show');
