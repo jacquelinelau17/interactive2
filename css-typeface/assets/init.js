@@ -91,8 +91,8 @@ Graphic.prototype.touchActivate = function(e){
   var nchild = randomNum(1, 5);
   console.log(nchild);
 
-  $("#fun .item").removeClass('show');
-  $("#fun .item:nth-child("+nchild+")").addClass('show');
+  $("#fun .newitem").removeClass('show');
+  $("#fun .newitem:nth-child("+nchild+")").addClass('show');
 
 
 }
@@ -114,8 +114,8 @@ Graphic.prototype.accelHandler = function(accel){
 
  if(this.activated){
     $("#orientation").html("<br />x: "+x+"<br />y: "+y+"<br />z: "+z);
-    $("#fun .item div").css("border-radius", Math.abs(x)*2+"vh");
-    $("#fun .item div").css("width", Math.abs(y)*10+"px");
+    $("#fun .newitem div").css("border-radius", Math.abs(x)*2+"vh");
+    $("#fun .newitem div").css("width", Math.abs(y)*10+"px");
     $fun.css("background-color", this.background_color);
  }
 }
