@@ -1427,10 +1427,6 @@ body{
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
 
-.orientation{
-	transform:scale(3);
-}
-
 .container{
   	display: none;
 }
@@ -1440,7 +1436,7 @@ body{
 	height: 100vh;
 }
 
-.item {
+.newitem {
 	display: none;
 	transform:scale(3);
 	transform-origin:top left;
