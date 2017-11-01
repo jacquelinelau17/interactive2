@@ -1441,6 +1441,7 @@ body{
 	transform:scale(3);
 	transform-origin:top left;
 	margin-top:30vh;
+	margin-left:20vw;
 }
 
 .item.show {
