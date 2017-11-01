@@ -1433,6 +1433,9 @@ body{
 @media only screen and (max-width:740px) {
   /* For mobile phones: */
 
+.move{
+	margin-left:10vw;
+}
 
 .container1, .container2, .container3, .showcase{
   	display: none;
@@ -1440,7 +1443,7 @@ body{
 
 #fun{
 	display: block;
-	height: 97vh;
+	height: 90vh;
 	background:#D8B000;
  	overflow:hidden;
 }
