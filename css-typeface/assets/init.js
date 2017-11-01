@@ -29,7 +29,7 @@ var setup = function(){
   checkFeatureSupport();
   graphic = new Graphic();
   $fun = $("#fun");
-  $funDiv = $("#fun .item div");
+  $funDiv = $("#fun .newitem div");
   //add events
   $fun.bind("mousedown", touchActivate);
   $fun.bind("mouseup", touchDeactivate);
@@ -84,11 +84,11 @@ function randomNum(m,n) {
 
 Graphic.prototype.touchActivate = function(e){
   this.activated = true;
-  $fun.css("background-color", "#626A03");
-  $fun.css("background-color", this.background_color);
-  $funDiv.css("background-color", this.background_color);
+  $fun.css("background-color", "#D8B000");
+  // $fun.css("background-color", this.background_color);
+  // $funDiv.css("background-color", this.background_color);
 
-  var nchild = randomNum(1, 5);
+  var nchild = randomNum(1, 10);
   console.log(nchild);
 
   $("#fun .newitem").removeClass('show');
@@ -116,7 +116,7 @@ Graphic.prototype.accelHandler = function(accel){
     $("#orientation").html("<br />x: "+x+"<br />y: "+y+"<br />z: "+z);
     $("#fun .newitem div").css("border-radius", Math.abs(x)*2+"vh");
     $("#fun .newitem div").css("width", Math.abs(y)*10+"px");
-    $fun.css("background-color", this.background_color);
+    // $fun.css("background-color", this.background_color);
  }
 }
 
