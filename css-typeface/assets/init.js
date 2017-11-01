@@ -88,7 +88,7 @@ Graphic.prototype.touchActivate = function(e){
   // $fun.css("background-color", this.background_color);
   // $funDiv.css("background-color", this.background_color);
 
-  var nchild = randomNum(1, 10);
+  var nchild = randomNum(1, 12);
   console.log(nchild);
 
   $("#fun .newitem").removeClass('show');
@@ -99,8 +99,8 @@ Graphic.prototype.touchActivate = function(e){
 
 Graphic.prototype.touchDeactivate = function(e){
   this.activated = false;
-  $fun.css("background-color","white");
-  $funDiv.css("background-color","white");
+  $fun.css("background-color","#D8B000");
+  $funDiv.css("background-color","#D8B000");
 }
 
 

@@ -1452,12 +1452,25 @@ body{
 	display: none;
 	transform:scale(3);
 	transform-origin:top left;
-	margin-top:30vh;
-	margin-left:25vw;
+	margin-top:20vh;
+	margin-left:10vw;
 }
 
 .newitem.show {
 	display: block;
+}
+
+#info{
+	color:white;
+	opacity:0.7;
+	font-family:sans-serif;
+	font-size:0.7em;
+	font-weight:lighter;
+	letter-spacing:2pt;
+	text-transform:uppercase;
+	margin-top:70vh;
+	margin-left:2vw;
+	position:absolute;
 }
   
 
