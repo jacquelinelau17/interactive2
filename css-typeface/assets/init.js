@@ -84,9 +84,9 @@ function randomNum(m,n) {
 
 Graphic.prototype.touchActivate = function(e){
   this.activated = true;
-  $fun.css("background-color", "lime");
-  $fun.css("background-color", this.background_color);
-  $funDiv.css("background-color", this.background_color);
+  $fun.css("background-color", "#626A03");
+  // $fun.css("background-color", this.background_color);
+  // $funDiv.css("background-color", this.background_color);
 
   var nchild = randomNum(1, 5);
   console.log(nchild);

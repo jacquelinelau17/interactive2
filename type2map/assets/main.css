@@ -1,30 +1,152 @@
 body{
 	overflow:hidden;
+	background-color: #a0ddf2;
+	margin-top:-2vh;
 }
 
-.map{
-	height:80vh;
-	width:80vw;
-	margin-left:12vw;
-	margin-top:7vh;
+.info{
+	margin-left:95vw;
+	margin-top:95vh;
+	position:absolute;
+	font-family:sans-serif;
+	opacity:0.3;
+	height:1vh
+	width:1vw;
 }
 
-.church{
-	background-image:"url(assets/missiondolores.png)";
+#legend{
+	margin-left:2vw;
 }
 
-.cls-1{fill:#bfbfbf;}.cls-2{fill:#bed5a4;}
-.cls-3{fill:#a0c655;}.cls-4{fill:#3a6029;}
-.cls-5{fill:#1e492b;}.cls-6{fill:#738e62;}
-.cls-7{fill:#6c9275;}.cls-8{fill:#438966;}
-.cls-9{fill:#d4742e;}.cls-10{fill:#e9de38;}
-.cls-11{fill:#e6c07b;}.cls-12{fill:#dfa232;}
-.cls-13{fill:#9662a4;}.cls-14{fill:#5e267c;}
-.cls-15{fill:#2c0d56;}.cls-16{fill:#d05345;}
-.cls-17{fill:#56131f;}.cls-18{fill:#9e434d;}
-.cls-19{fill:#cb5971;}.cls-20{fill:#d6789f;}
-.cls-21{fill:#cb2e41;}.cls-22{fill:#881433;}
-.cls-23{fill:#7bc4ea;}.cls-24{fill:#9aaed4;}
-.cls-25{fill:#6d8abc;}.cls-26{fill:#b5d8e2;}
-.cls-27{fill:#3da7dc;}.cls-28{fill:#002e4e;}
-.cls-29{fill:#2a5a7a;}
+.info1{
+	opacity:0.8;
+	color:white;
+}
+
+img{
+	z-index:-1111;
+	width:100%;
+	position:absolute;
+	margin-top:5vh;
+	margin-left:-2vw;
+}
+
+svg{
+	position:absolute;
+	height:100%;
+	width:100%;
+	margin-left:-2vw;
+}
+
+.map1{
+	z-index:10;
+}
+
+#Parkside1{
+	display:none;
+}
+
+#Potrero1{
+	display:none;
+}
+
+#Lakeshore1 {
+	display:none;
+}
+
+#OuterSunset1{
+	display:none;
+}
+
+#InnerSunset1{
+	display:none;
+}
+
+#GoldenGatePark1{
+	display:none;
+}
+
+#OuterRichmond1{
+	display:none;
+}
+
+#InnerRichmond1{
+	display:none;
+}
+
+#Excelsior1{
+	display:none;
+}
+
+#OuterMission1{
+	display:none;
+}
+
+#OceanView1{
+	display:none;
+}
+
+#WTwinPeaks1{
+	display:none;
+}
+
+#SOMA1{
+	display:none;
+}
+
+#Mission1{
+	display:none;
+}
+
+#NoeValley1{
+	display:none;
+}
+
+#Castro1{
+	display:none;
+}
+
+#HaightAshbury1{
+	display:none;
+}
+
+#PacificHeights1{
+	display:none;
+}
+
+#WesternAddition1{
+	display:none;
+}
+
+#Downtown1{
+	display:none;
+}
+
+#FinancialDistrict1{
+	display:none;
+}
+
+#Chinatown1{
+	display:none;
+}
+
+#NobHill1{
+	display:none;
+}
+
+#Marina1{
+	display:none;
+}
+
+#RussianHill1{
+	display:none;
+}
+
+#NorthBeach1{
+	display:none;
+}
+
+#Presidio1{
+	display:none;
+}
+
