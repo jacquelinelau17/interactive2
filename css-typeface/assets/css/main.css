@@ -3,6 +3,25 @@ body{
 	overflow-x:hidden;
 }
 
+.invert{
+	filter:invert(100);
+	transition:1s ease;
+}
+
+
+p{
+	color:white;
+	font-size:8pt;
+	opacity:0.5;
+	letter-spacing:3pt;
+	line-height:40pt;
+	margin-bottom:-5vh;
+	margin-left:0vh;
+	font-family:sans-serif;
+	font-weight:lighter;
+	text-transform:uppercase;
+}
+
 
 .container1 {
 	margin-top:-8vh;
@@ -19,6 +38,7 @@ body{
 	height:450vh;
 	width:30vw;
 	z-index:1;
+	border-left: 10px dashed #D8B000;
 }
 
 .container2 {
@@ -108,7 +128,9 @@ body{
 
 .reallythin{
 	width:2vw;
+	margin-left:3vw;
 }
+
 
 .olive{
 	background:#D8B000 !important;
@@ -383,6 +405,10 @@ body{
 	border-radius:1vh;
 	background:transparent;
 	position:absolute;
+}
+
+#I4:hover{
+	cursor:pointer !important;
 }
 
 
