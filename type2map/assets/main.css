@@ -4,149 +4,251 @@ body{
 	margin-top:-2vh;
 }
 
-.info{
-	margin-left:95vw;
-	margin-top:95vh;
-	position:absolute;
-	font-family:sans-serif;
-	opacity:0.3;
-	height:1vh
-	width:1vw;
+.clickarea{
+	opacity:0;
 }
 
-#legend{
-	margin-left:2vw;
-}
-
-.info1{
-	opacity:0.8;
-	color:white;
-}
-
-img{
-	z-index:-1111;
-	width:100%;
-	position:absolute;
-	margin-top:5vh;
-	margin-left:-2vw;
+.legend{
+	margin-left:3vw;
+	cursor:default;
 }
 
 svg{
 	position:absolute;
 	height:100%;
 	width:100%;
-	margin-left:-2vw;
+	margin-left:-3vw;
 }
 
-.map1{
-	z-index:10;
+g{
+	transition: 0.3s all;
 }
 
-#Parkside1{
-	display:none;
+rect{
+	transform:translate(-5vw),;
 }
 
-#Potrero1{
-	display:none;
+rect:hover{
+	cursor:crosshair;
 }
 
-#Lakeshore1 {
-	display:none;
+.Parkside2{
+	opacity: 0;
 }
 
-#OuterSunset1{
-	display:none;
+.Parkside {
+	z-index: 100;
 }
 
-#InnerSunset1{
-	display:none;
+.Potrero2{
+	opacity: 0;
 }
 
-#GoldenGatePark1{
-	display:none;
+.Potrero {
+	z-index: 100;
 }
 
-#OuterRichmond1{
-	display:none;
+.Lakeshore2{
+	opacity: 0;
 }
 
-#InnerRichmond1{
-	display:none;
+.Lakeshore {
+	z-index: 100;
 }
 
-#Excelsior1{
-	display:none;
+.OuterSunset2{
+	opacity: 0;
 }
 
-#OuterMission1{
-	display:none;
+.OuterSunset {
+	z-index: 100;
 }
 
-#OceanView1{
-	display:none;
+.InnerSunset2{
+	opacity: 0;
 }
 
-#WTwinPeaks1{
-	display:none;
+.InnerSunset {
+	z-index: 100;
 }
 
-#SOMA1{
-	display:none;
+.GoldenGatePark2{
+	opacity: 0;
 }
 
-#Mission1{
-	display:none;
+.OuterRichmond2{
+	opacity: 0;
 }
 
-#NoeValley1{
-	display:none;
+.OuterRichmond {
+	z-index: 100;
 }
 
-#Castro1{
-	display:none;
+.InnerRichmond2{
+	opacity: 0;
 }
 
-#HaightAshbury1{
-	display:none;
+.InnerRichmond {
+	z-index: 100;
 }
 
-#PacificHeights1{
-	display:none;
+.Excelsior2{
+	opacity: 0;
 }
 
-#WesternAddition1{
-	display:none;
+.Excelsior{
+	z-index: 100;
 }
 
-#Downtown1{
-	display:none;
+.OuterMission2{
+	opacity: 0;
 }
 
-#FinancialDistrict1{
-	display:none;
+.OuterMision{
+	z-index: 100;
 }
 
-#Chinatown1{
-	display:none;
+.OceanView2{
+	opacity: 0;
 }
 
-#NobHill1{
-	display:none;
+.OceanView{
+	z-index: 100;
 }
 
-#Marina1{
-	display:none;
+.WTwinPeaks2{
+	opacity: 0;
 }
 
-#RussianHill1{
-	display:none;
+.WTwinPeaks{
+	z-index: 100;
 }
 
-#NorthBeach1{
-	display:none;
+.SOMA2{
+	opacity: 0;
 }
 
-#Presidio1{
-	display:none;
+.SOMA{
+	z-index: 100;
+}
+
+.Mission2{
+	opacity: 0;
+}
+
+.Mision{
+	z-index: 100;
+}
+
+.NoeValley2{
+	opacity: 0;
+}
+
+.NoeValley{
+	z-index: 100;
+}
+
+.Castro2{
+	opacity: 0;
+}
+
+.Castro{
+	z-index: 100;
+}
+
+.HaightAshbury2{
+	opacity: 0;
+}
+
+.HaightAshbury{
+	z-index: 100;
+}
+
+.PacificHeights2{
+	opacity: 0;
+}
+
+.PacificHeights{
+	z-index: 100;
+}
+
+.WesternAddition2{
+	opacity: 0;
+}
+
+.WesternAddition{
+	z-index: 100;
+}
+
+.Downtown2{
+	opacity: 0;
+}
+
+.Downtown{
+	z-index: 100;
+}
+
+.FinancialDistrict2{
+	opacity: 0;
+}
+
+.FinancialDistrict{
+	z-index: 100;
+}
+
+.Chinatown2{
+	opacity: 0;
+}
+
+.Chinatown{
+	z-index: 100;
+}
+
+.NobHill2{
+	opacity: 0;
+}
+
+.NobHill{
+	z-index: 100;
+}
+
+.Marina2{
+	opacity: 0;
+}
+
+.Marina{
+	z-index: 100;
+}
+
+.RussianHill2{
+	opacity: 0;
+}
+
+.RussianHill{
+	z-index: 100;
+}
+
+.NorthBeach2{
+	opacity: 0;
+}
+
+.NorthBeach{
+	z-index: 100;
+}
+
+.Presidio2{
+	opacity: 0;
+}
+
+.Presidio{
+	z-index: 100;
+}
+
+.Bayview2{
+	opacity: 0;
+}
+
+.Bayview{
+	z-index: 100;
 }
 

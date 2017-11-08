@@ -1,0 +1,154 @@
+body{
+	overflow:hidden;
+	background-color: #a0ddf2;
+	margin-top:-2vh;
+}
+
+/*.info{
+	margin-left:95vw;
+	margin-top:95vh;
+	position:absolute;
+	font-family:sans-serif;
+	opacity:0.3;
+	height:1vh
+	width:1vw;
+}
+
+#legend{
+	margin-left:2vw;
+}
+
+.info1{
+	opacity:0.8;
+	color:white;
+}*/
+
+img{
+	z-index:-1111;
+	width:100%;
+	position:absolute;
+	margin-top:5vh;
+	margin-left:-2vw;
+}
+
+svg{
+	position:absolute;
+	height:100%;
+	width:100%;
+	margin-left:-2vw;
+}
+
+
+#Parkside1{
+	display:none;
+	transition: 2s ease;
+}
+
+#Bayview1{
+	display:none;
+}
+
+#Potrero1{
+	display:none;
+}
+
+#Lakeshore1 {
+	display:none;
+}
+
+#OuterSunset1{
+	display:none;
+}
+
+#InnerSunset1{
+	display:none;
+}
+
+#GoldenGatePark1{
+	display:none;
+}
+
+#OuterRichmond1{
+	display:none;
+}
+
+#InnerRichmond1{
+	display:none;
+}
+
+#Excelsior1{
+	display:none;
+}
+
+#OuterMission1{
+	display:none;
+}
+
+#OceanView1{
+	display:none;
+}
+
+#WTwinPeaks1{
+	display:none;
+}
+
+#SOMA1{
+	display:none;
+}
+
+#Mission1{
+	display:none;
+}
+
+#NoeValley1{
+	display:none;
+}
+
+#Castro1{
+	display:none;
+}
+
+#HaightAshbury1{
+	display:none;
+}
+
+#PacificHeights1{
+	display:none;
+}
+
+#WesternAddition1{
+	display:none;
+}
+
+#Downtown1{
+	display:none;
+}
+
+#FinancialDistrict1{
+	display:none;
+}
+
+#Chinatown1{
+	display:none;
+}
+
+#NobHill1{
+	display:none;
+}
+
+#Marina1{
+	display:none;
+}
+
+#RussianHill1{
+	display:none;
+}
+
+#NorthBeach1{
+	display:none;
+}
+
+#Presidio1{
+	opacity:0;
+}
+
