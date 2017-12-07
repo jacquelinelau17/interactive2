@@ -1,0 +1,50 @@
+body{
+	margin-top:5vh;
+	margin-left:5vw;
+}
+
+h1{
+	text-transform:uppercase;
+	font-family:sans-serif;
+	font-weight:normal;
+	font-size:18pt;
+	letter-spacing:2pt;
+}
+
+h4{
+	text-transform:uppercase;
+	font-family:sans-serif;
+	font-weight:lighter;
+	letter-spacing:1pt;
+}
+
+
+#gif{
+	float:left;
+	height:40vh;
+	margin-top: 2vh;
+	position:absolute;
+}
+
+.img1{
+	width:20vw;
+	margin-top:50vh;
+	padding:1vh;
+	position:absolute;
+}
+
+.img2{
+	width:20vw;
+	margin-top:50vh;
+	padding:1vh;
+	margin-left:23vw;
+	position:absolute;
+}
+
+.img3{
+	width:20vw;
+	margin-top:50vh;
+	padding:1vh;
+	margin-left:46vw;
+	position:absolute;
+}

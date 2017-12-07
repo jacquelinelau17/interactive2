@@ -1,0 +1,28 @@
+body{
+	margin-top:5vh;
+	margin-left:5vw;
+}
+
+h1{
+	text-transform:uppercase;
+	font-family:sans-serif;
+	font-weight:normal;
+	font-size:18pt;
+	letter-spacing:2pt;
+}
+
+
+.img1{
+	width:20vw;
+	margin-top:6vh;
+	padding:1vh;
+	position:absolute;
+}
+
+.img2{
+	width:13.8vw;
+	margin-top:6vh;
+	padding:1vh;
+	margin-left:23vw;
+	position:absolute;
+}
