@@ -84,7 +84,7 @@ function randomNum(m,n) {
 
 Graphic.prototype.touchActivate = function(e){
   this.activated = true;
-  $fun.css("background-color", "#D8B000");
+  $fun.css("background-color", "white");
   // $fun.css("background-color", this.background_color);
   // $funDiv.css("background-color", this.background_color);
 
@@ -99,8 +99,8 @@ Graphic.prototype.touchActivate = function(e){
 
 Graphic.prototype.touchDeactivate = function(e){
   this.activated = false;
-  $fun.css("background-color","#D8B000");
-  $funDiv.css("background-color","#D8B000");
+  $fun.css("background-color","white");
+  $funDiv.css("background-color","white");
 }
 
 

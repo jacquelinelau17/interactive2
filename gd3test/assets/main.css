@@ -1,0 +1,17 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#top{
+	position:fixed;
+	width:100%;
+}
+
+#bg{
+	position:absolute;
+	width:100%;
+}
+
+
+

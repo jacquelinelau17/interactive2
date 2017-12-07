@@ -1,0 +1,310 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+	background-color:oldlace;
+}
+
+a{
+	text-decoration:none;
+}
+
+/*FRAME*/
+
+#frame-top, #frame-bottom{
+	height:5vh;
+	width:100%;
+	background-color:#096134;
+	position:fixed;
+	z-index:9000;
+}
+
+#frame-bottom{
+	margin-top:95vh;
+}
+
+#menu-art,#menu-info,#menu-home,#menu-audio{
+	color:oldlace;
+	font-family:monarcha;
+	font-weight:300;
+	text-transform:uppercase;
+	letter-spacing:3pt;
+	font-size:12pt;
+	position:fixed;
+	z-index:10000;
+	opacity:0.7;
+	/*cursor:pointer;*/
+}
+
+#menu-art:hover{
+	opacity:1;
+	transition:0.5s ease;
+	cursor:pointer;
+}
+
+#menu-info:hover{
+	opacity:1;
+	transition:0.5s ease;
+	cursor:pointer;
+}
+
+#menu-home:hover{
+	opacity:1;
+	transition:0.5s ease;
+	cursor:pointer;
+}
+
+#menu-audio:hover{
+	opacity:1;
+	transition:0.5s ease;
+	cursor:pointer;
+}
+
+#menu-art{
+	margin-left:48vw;
+	margin-top:1.2vh;
+}
+
+#menu-info{
+	margin-left:47vw;
+	margin-top:96.3vh;
+}
+
+#menu-home{
+	margin-top:47vh;
+	margin-left:-0.5vw;
+	transform:rotate(-90deg);
+}
+
+#menu-audio{ 
+	margin-top:48vh;
+	margin-left:96vw;
+	transform:rotate(90deg);
+}
+
+
+#frame-left, #frame-right{
+	height:100%;
+	width:3.5vw;
+	background-color:#096134;
+	position:fixed;
+	z-index:9000;
+}
+
+#frame-right{
+	margin-left:96.5vw;
+}
+
+
+.gold{
+	background-color:darkgoldenrod !important;
+}
+
+
+/*INFO*/
+
+.exit1{
+	margin-left:91vw;
+	margin-top:9vh;
+	color:#096134;
+	font-size:2.5em;
+	font-weight:300;
+	position:fixed;
+	cursor:pointer;
+}
+
+.exit2{
+	margin-left:74vw;
+	margin-top:2vh;
+	color:oldlace;
+	font-size:2.5em;
+	font-weight:300;
+	position:absolute;
+	cursor:pointer;
+}
+
+.popout{
+	width:100vw;
+	height: 100vh;
+	background-color:oldlace;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	z-index:8000;
+	text-align:center;
+	overflow-y: scroll;
+}
+
+/*.opacity{
+	opacity:0.8 !important;
+}*/
+
+.popout h1{
+	font-family:boucherie-block;
+	font-size:58pt;
+	font-weight:300;
+	letter-spacing:2pt;
+	line-height:82pt;
+	margin-top:18vh;
+	color:#096134;
+}
+
+.popout h2{
+	font-family:boucherie-block;
+	font-size:32pt;
+	line-height:48pt;
+	font-weight:300;
+	letter-spacing:1.5pt;
+	color:#096134;
+}
+
+.popout p{
+	font-family:monarcha;
+	font-size:36pt;
+	font-weight:300;
+	line-height:55pt;
+	margin-left:12vw;
+	margin-right:12vw;
+	margin-top:3vh;
+	margin-bottom:15vh;
+}
+
+#ornament{
+	fill:darkgoldenrod;
+	height:5vh;
+	margin-top:7vh;
+	margin-bottom:4vh;
+}
+
+
+/*NAVIGATION*/
+
+
+#hat-shadow{
+	background-size: cover;
+	margin-top:23vh;
+	margin-left:8vw;
+	height:20vh;
+	width:30vh;
+	position:fixed;
+}
+
+#cloud-shadow{
+	background-size: cover;
+	margin-top:25vh;
+	margin-left:28vw;
+	height:21vh;
+	width:40vh;
+	position:fixed;
+	display: block;
+}
+
+#apple-shadow{
+	background-size: cover;
+	margin-top:22vh;
+	height:23vh;
+	width:23vh;
+	position:fixed;
+	margin-left:55vw;
+}
+
+#hat, #cloud, #apple{
+	position:fixed;
+}
+
+#hat{
+	height:19vh;
+	width:30vh;
+}
+
+#hat:hover{
+	cursor:pointer;
+}
+
+#cloud{
+	height:18vh;
+	width:40vh;
+}
+
+#apple{
+	height:22.9vh;
+	width:22.1vh;
+}
+
+#apple:hover{
+	cursor:pointer;
+}
+
+#cloud:hover{
+	cursor:pointer;
+}
+
+#dropdown{
+	background-color:darkgoldenrod;
+	height:70vh;
+	width:78vw;
+	margin-left:11vw;
+	margin-top:14vh;
+	position:fixed;
+	display:none;
+	z-index:9000;
+}
+
+
+/*TITLE PAGE*/
+
+#name, #title{
+	position:absolute;
+	letter-spacing:8pt;
+	font-family: "boucherie-block";
+	color:darkgoldenrod;
+}
+
+#name{
+	margin-left:12vw;
+	margin-top:34vh;
+	font-size:120pt;
+}
+
+#title{
+	margin-left:12.5vw;
+	margin-top:67vh;
+	font-size:100pt;
+}
+
+#selections{
+	position:absolute;
+	letter-spacing:2pt;
+	font-size:50pt;
+	margin-top:15vh;
+	margin-left:33vw;
+	font-family: "monarcha-italic";
+	color:darkgoldenrod;
+}
+
+#rule1, #rule2{
+	height:1vh;
+	width:20vw;
+	margin-left:39vw;
+	background-color:transparent;
+	border-top:4pt dotted darkgoldenrod;
+	position:absolute;
+}
+
+#rule1{
+	margin-top:30vh;
+}
+
+#rule2{
+	margin-top:61vh;
+}
+
+#sfmoma{
+	width:10vw;
+}
+
+
+
+

@@ -1,0 +1,40 @@
+body {
+	height: 3000px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#hat1, #hat2, #hat3, #hat4, #hat5{
+	position:fixed;
+	height:80%;
+	margin-top:8vh;
+	z-index:500;
+}
+
+#hat2, #hat3, #hat4, #hat5{
+	opacity: 0;
+}
+
+
+#hat1,#hat2, #hat3, #hat4, #hat5{
+	margin-left:31vw;
+	margin-top:10vh;
+}
+
+
+.zoom{
+	transform-origin:center;
+	transform:scale(2.5);
+	transition:2s ease;
+	z-index:500;
+}
+
+#ornament{
+	fill:darkgoldenrod;
+	height:5vh;
+	margin-top:7vh;
+	margin-bottom:4vh;
+}

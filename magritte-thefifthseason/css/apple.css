@@ -1,0 +1,38 @@
+body {
+	height: 4000px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#apple1, #apple2, #apple3, #apple4, #apple5, #apple6{
+	position:fixed;
+	height:75%;
+	margin-top:11vh;
+	z-index:500;
+}
+
+#apple2, #apple3, #apple4, #apple5, #apple6{
+	opacity: 0;
+}
+
+
+#apple1,#apple2, #apple3, #apple4, #apple5, #apple6{
+	margin-left:21vw;
+}
+
+.zoom{
+	transform-origin:center;
+	transform:scale(2.5);
+	transition:2s ease;
+	z-index:500;
+}
+
+#ornament{
+	fill:darkgoldenrod;
+	height:5vh;
+	margin-top:7vh;
+	margin-bottom:4vh;
+}
